@@ -44,7 +44,6 @@ def fif(h1, h2, h3, h4, h5):
     print(x)
 
 def six(years, months):
-    print(years, months, '- входные данные')
     if years >= 0 and months >= 0:
         print('29 *', months, '+' ,years, '* 12 * 29 =', 29 * months + years * 12 * 29)
     else:
@@ -57,14 +56,18 @@ print('\n')
 sec(137, 2)
 print('\n')
 
-for month in range (-1, 14):
-    thi(month)
+thi(10)
+
+'''for month in range (-1, 14): # - проверка
+    thi(month)''' 
 print('\n')
 
-for e in range (9, 13):
+fou(4, 5, 13)
+
+'''for e in range (9, 13): # - проверка
     for f in range (9, 13):
         for g in range (9, 13):
-            fou(e, f, g)
+            fou(e, f, g)'''
 print('\n')
 
 fif(-2, -1, 0, 1, 2)
