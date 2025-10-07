@@ -1,17 +1,17 @@
 
-def fir(a, b):
+def maximum(a, b):
     if a > b:
         print(a)
     else:
         print(b)
 
-def sec(c, d):
+def difference(c, d):
     if c - d == 135 or d - c == 135:
         print('yes')
     else:
         print('no')
 
-def thi(month):
+def seasons(month):
     if month in range(1, 3) or month == 12:
         print(month, 'winter')
     elif month in range(3, 6):
@@ -23,13 +23,13 @@ def thi(month):
     else:
         print(month, 'Wrong month num')
 
-def fou(e, f, g):
+def MoreThan10(e, f, g):
     if e > 10 and f > 10 and g > 10:
         print('yes')
     else:
         print(e, f, g, '-> no')
 
-def fif(h1, h2, h3, h4, h5):
+def PositiveCount(h1, h2, h3, h4, h5):
     x = 0
     if h1 > 0:
         x = x + 1
@@ -43,38 +43,38 @@ def fif(h1, h2, h3, h4, h5):
         x = x + 1
     print(x)
 
-def six(years, months):
+def days(years, months):
     if years >= 0 and months >= 0:
         print('29 *', months, '+' ,years, '* 12 * 29 =', 29 * months + years * 12 * 29)
     else:
         print('err')
         
 
-fir(1000, 100)
+maximum(1000, 100)
 print('\n')
 
-sec(137, 2)
+difference(137, 2)
 print('\n')
 
-thi(10)
+seasons(10)
 
 '''for month in range (-1, 14): # - проверка
-    thi(month)''' 
+    seasons(month)''' 
 print('\n')
 
-fou(4, 5, 13)
+MoreThan10(4, 5, 13)
 
 '''for e in range (9, 13): # - проверка
     for f in range (9, 13):
         for g in range (9, 13):
-            fou(e, f, g)'''
+            MoreThan10(e, f, g)'''
 print('\n')
 
-fif(-2, -1, 0, 1, 2)
+PositiveCount(-2, -1, 0, 1, 2)
 print('\n')
 
 '''for years in range (-1, 3):
     for months in range (-1, 3): # - проверка
         six(years, months)'''
 
-six(12, 24)
+days(12, 24)
