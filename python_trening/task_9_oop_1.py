@@ -1,7 +1,7 @@
 from task_9_checks import Checks
 
-class ButtonTwo(Checks):
 
+class ButtonTwo(Checks):
     def __init__(self, text, link, loc):
         super().__init__(loc)
         self.text = text
@@ -12,41 +12,45 @@ class ButtonTwo(Checks):
 
 
 home_two = ButtonTwo('Домой', '/home', 'button#home')
-
-
 print(home_two.click())
+
 
 class Input(Checks):
     def __init__(self, loc):
         super().__init__(loc)
 
-search = Input('input#search')
 
+search = Input('input#search')
 print(search.loc)
+
 
 class InputWithText(Checks):
     def __init__(self, loc, text):
         super().__init__(loc)
         self.text = text
 
-search = InputWithText('input#search', '12345')
 
-print(search.loc, search.text)
+search_with_text = InputWithText('input#search', '12345')
+print(search_with_text.loc, search_with_text.text)
+
 
 class Button(Checks):
     def __init__(self, loc, text):
         super().__init__(loc)
         self.text = text
 
+
 class Title(Checks):
     def __init__(self, loc, text):
         super().__init__(loc)
         self.text = text
 
+
 class Link(Checks):
     def __init__(self, loc, text):
         super().__init__(loc)
         self.text = text
+
 
 one = Button('Button#one', 'first')
 two = Title('title#two', 'second')
